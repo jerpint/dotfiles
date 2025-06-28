@@ -58,6 +58,16 @@ au BufWritePre *.py,*.*rc %s/\s\+$//e
 let g:python_highlight_all = 1 " enable all Python syntax highlighting features
 
 " PLUGINS
+
+
+"Download Plug if it doesn't exist
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+
 call plug#begin()
 Plug 'https://github.com/joshdick/onedark.vim.git'
 Plug 'sonph/onehalf', { 'rtp': 'vim'}
@@ -136,7 +146,7 @@ let g:NERDCommentEmptyLines = 1
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
 
-" Enable NERDCommenterToggle to check all selected lines is commented or not 
+" Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 
 
