@@ -16,14 +16,14 @@
         "key": "ctrl+j",
         "command": "workbench.action.navigateDown"
     },
-    {
-        "key": "cmd+o",
-        "command": "editor.action.insertSnippet",
-        "when": "editorTextFocus",
-        "args": {
-          "snippet": "\nfrom IPython import embed; embed(colors='neutral');"
-        }
-    },
+    // {
+    //     "key": "cmd+o",
+    //     "command": "editor.action.insertSnippet",
+    //     "when": "editorTextFocus",
+    //     "args": {
+    //       "snippet": "\nfrom IPython import embed; embed(colors='neutral');"
+    //     }
+    // },
     {
         "key": "shift+f2",
         "command": "editor.action.formatDocument",

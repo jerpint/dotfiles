@@ -45,19 +45,9 @@
     "git.autofetch": true,
     "files.trimTrailingWhitespace": true,
     "workbench.commandPalette.preserveInput": true,
-    "gitlens.currentLine.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.codeLens.enabled": false,
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnType": true
-    },
     "editor.minimap.enabled": false,
     "terminal.integrated.fontFamily": "'DroidSansMono Nerd Font', monospace",
     "terminal.integrated.fontSize": 14,
-    "cSpell.enableFiletypes": [
-        "!python"
-    ],
     "jupyter.askForKernelRestart": false,
     "notebook.output.textLineLimit": 200,
     "terminal.integrated.inheritEnv": false,
@@ -69,14 +59,13 @@
     },
     "workbench.tree.renderIndentGuides": "always",
     "editor.fontSize": 14,
-    "workbench.iconTheme": "material-icon-theme",
     "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "workbench.activityBar.orientation": "vertical",
     "python.languageServer": "Pylance",
     "explorer.confirmDelete": false,
-    "smart-tabs.debounceDelay": 200,
-    "auto-arrange-tabs.millis": 1,
     "terminal.integrated.macOptionClickForcesSelection": true,
     "editor.wordWrap": "on",
-    "typescript.updateImportsOnFileMove.enabled": "always"
-
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "window.commandCenter": true,
+    "workbench.colorTheme": "Cursor Dark Midnight"
 }
