@@ -1,0 +1,82 @@
+{
+    "vim.commandLineModeKeyBindings": [
+        {
+            "before": [
+                "Q",
+                "<CR>"
+            ],
+            "after": [
+                "q",
+                "<CR>"
+            ]
+        },
+        {
+            "before": [
+                "W",
+                "<CR>"
+            ],
+            "after": [
+                "w",
+                "<CR>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "j"
+            ],
+            "after": [
+                "g",
+                "j"
+            ]
+        },
+        {
+            "before": [
+                "k"
+            ],
+            "after": [
+                "g",
+                "k"
+            ]
+        }
+    ],
+    "vim.useSystemClipboard": true,
+    "git.autofetch": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.commandPalette.preserveInput": true,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.codeLens.enabled": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnType": true
+    },
+    "editor.minimap.enabled": false,
+    "terminal.integrated.fontFamily": "'DroidSansMono Nerd Font', monospace",
+    "terminal.integrated.fontSize": 14,
+    "cSpell.enableFiletypes": [
+        "!python"
+    ],
+    "jupyter.askForKernelRestart": false,
+    "notebook.output.textLineLimit": 200,
+    "terminal.integrated.inheritEnv": false,
+    "notebook.lineNumbers": "on",
+    "git.openRepositoryInParentFolders": "always",
+    "workbench.tree.indent": 24,
+    "workbench.colorCustomizations": {
+        "tree.indentGuidesStroke": "#00ccff"
+    },
+    "workbench.tree.renderIndentGuides": "always",
+    "editor.fontSize": 14,
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace",
+    "python.languageServer": "Pylance",
+    "explorer.confirmDelete": false,
+    "smart-tabs.debounceDelay": 200,
+    "auto-arrange-tabs.millis": 1,
+    "terminal.integrated.macOptionClickForcesSelection": true,
+    "editor.wordWrap": "on",
+    "typescript.updateImportsOnFileMove.enabled": "always"
+
+}

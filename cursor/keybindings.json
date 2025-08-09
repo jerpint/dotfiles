@@ -1,0 +1,101 @@
+// Place your key bindings in this file to override the defaults
+[
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "cmd+o",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus",
+        "args": {
+          "snippet": "\nfrom IPython import embed; embed(colors='neutral');"
+        }
+    },
+    {
+        "key": "shift+f2",
+        "command": "editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "shift+alt+f",
+        "command": "-editor.action.formatDocument",
+        "when": "editorHasDocumentFormattingProvider && editorTextFocus && !editorReadonly && !inCompositeEditor"
+    },
+    {
+        "key": "cmd+h",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+cmd+2",
+        "command": "editor.action.changeAll",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+f2",
+        "command": "-editor.action.changeAll",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+i",
+        "command": "composerMode.agent"
+    },
+
+
+
+
+    // navigate soft wrapped lines
+    // {
+    //     "key": "up",
+    //     "command": "cursorUp",
+    //     "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    //   },
+    //   {
+    //     "key": "down",
+    //     "command": "cursorDown",
+    //     "when": "editorTextFocus && vim.active && !inDebugRepl && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    //   },
+    //   {
+    //     "key": "k",
+    //     "command": "cursorUp",
+    //     "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal' && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    //   },
+    //   {
+    //     "key": "j",
+    //     "command": "cursorDown",
+    //     "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Normal' && !suggestWidgetMultipleSuggestions && !suggestWidgetVisible"
+    //   }
+
+]
