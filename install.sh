@@ -70,6 +70,22 @@ else
 fi
 
 
+echo "👨‍💻 Setting up npm and node via nvm ..."
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+# Source nvm immediately without requiring terminal restart
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+echo "Installing latest Node.js..."
+nvm install node
+nvm use node
+nvm alias default node
+
+echo "✅ Node.js and npm installed!"
+
+
 echo "🎯 Setting up oh-my-tmux configuration..."
 if [ ! -f "$HOME/.tmux.conf" ]; then
     git clone https://github.com/gpakosz/.tmux.git "$HOME/.tmux"
