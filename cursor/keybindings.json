@@ -16,14 +16,13 @@
         "key": "ctrl+j",
         "command": "workbench.action.navigateDown"
     },
-    // {
-    //     "key": "cmd+o",
-    //     "command": "editor.action.insertSnippet",
-    //     "when": "editorTextFocus",
-    //     "args": {
-    //       "snippet": "\nfrom IPython import embed; embed(colors='neutral');"
-    //     }
-    // },
+    // open file to side from tree explorer
+    // default 'o' opens in current visible window
+    {
+        "key": "shift+o",
+        "command": "explorer.openToSide",
+        "when": "explorerViewletVisible && filesExplorerFocus && !inputFocus"
+    },
     {
         "key": "shift+f2",
         "command": "editor.action.formatDocument",
