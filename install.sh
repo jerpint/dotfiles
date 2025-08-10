@@ -94,6 +94,12 @@ else
     echo "✅ tmux configuration already exists"
 fi
 
+
+echo "🏄 Setting up fzf..."
+brew install fzf
+$(brew --prefix)/opt/fzf/install
+echo "fzf installed!"
+
 echo "📁 Setting up dotfiles..."
 dotfiles_repo="https://github.com/jerpint/dotfiles.git"
 
