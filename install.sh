@@ -118,6 +118,14 @@ else
     echo "✅ Dotfiles directory already exists"
 fi
 
+brew install curl
+brew instlal wget
+
+brew install --cask claude-code
+
+
+brew install pnpm
+
 echo "🎉 Setup complete!"
 echo ""
 echo "📝 Next steps:"

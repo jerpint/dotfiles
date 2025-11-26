@@ -16,7 +16,7 @@ set cursorline " show a visual line under the cursor's current line
 set updatetime=100
 set showmatch " show the matching part of the pair for [] {} and ()
 set backspace=indent,eol,start
-set clipboard=unnamedplus " Copy to system register:
+set clipboard=unnamed,unnamedplus " Copy to system register (macOS/Neovim)
 set mouse=a
 
 

@@ -574,14 +574,6 @@ function _ccd() {
 complete -F _ccd ccd
 
 
-# pnpm
-export PNPM_HOME="/Users/jerpint/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-
 # . "$HOME/.cargo/env"
 
 # Added by LM Studio CLI (lms)
@@ -610,12 +602,9 @@ setopt INC_APPEND_HISTORY
 setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/jerpint/.lmstudio/bin"
-# End of LM Studio CLI section
-
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+# Ruby
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
 
 export EDITOR=vim
 export VISUAL=vim
@@ -625,10 +614,10 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/jerpint/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jerpint/google-cloud-sdk/path.zsh.inc'; fi
+# if [ -f '/Users/jerpint/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/jerpint/google-cloud-sdk/path.zsh.inc'; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/jerpint/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jerpint/google-cloud-sdk/completion.zsh.inc'; fi
+# if [ -f '/Users/jerpint/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/jerpint/google-cloud-sdk/completion.zsh.inc'; fi
 
 # place this after nvm initialization!
 autoload -U add-zsh-hook
